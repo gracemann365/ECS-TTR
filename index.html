@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Format Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>DATA FORMAT INTER-CONVERTER()</h1>
+        <div class="converter">
+            <div class="converter-panel">
+                <h2>Input</h2>
+                <textarea id="input" placeholder="Enter data here..."></textarea>
+                <select id="inputFormat">
+                    <option value="json">JSON</option>
+                    <option value="csv">CSV</option>
+                    <option value="xml">XML</option>
+                    <option value="yaml">YAML</option>
+                </select>
+            </div>
+            <div class="converter-panel">
+                <h2>Output</h2>
+                <textarea id="output" readonly></textarea>
+                <select id="outputFormat">
+                    <option value="json">JSON</option>
+                    <option value="csv">CSV</option>
+                    <option value="xml">XML</option>
+                    <option value="yaml">YAML</option>
+                </select>
+            </div>
+            <button id="convertButton">Convert</button>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
+
